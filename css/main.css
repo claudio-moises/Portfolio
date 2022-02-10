@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+    font-family: 'Open sans', sans-serif;
+}
+
+
+@media screen and (min-width: 320px) {
+
+    .jl-page-wrapper {
+        width: 100%;
+        height: 100vh;
+        display: table;
+        background-color: #000;
+        border: 30px solid #1C1C1C;
+    }
+
+    .jl-topbar {
+        width: 100%;
+        height: 110px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .jl-logo {
+        width: 74px;
+        height: 110px;
+        float: left;
+        margin-left: 60px;
+        background-color: #2CCB69;
+        border-radius: 0 0 37px 0;
+    }
+
+    .jl-logo img {
+        width: 50px;
+        height: 52px;
+        display: block;
+        margin: 33px auto 0 auto;
+    }
+
+    .jl-menu {
+        display: none;
+    }
+
+    .jl-btn-contact {
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2CCB69;
+        background-image: url('../images/icon-contact-close.svg');
+        background-repeat: no-repeat;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        border-radius: 50%;
+        z-index: 200;
+        transition: all 0.2s ease-out;
+        border: none;
+        cursor: pointer;
+    }
+
+    .jl-contact-info {
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 70px;
+        right: 65px;
+        z-index: 200;
+        display: none;
+    }
+
+    .jl-contact-info p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .jl-social-links {
+        width: 170px;
+        height: 42px;
+        display: block;
+        position: relative;
+        left: -1px;
+        margin-top: -2%;
+    }
+
+    .jl-social {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+    }
+
+    .jl-social>img {
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 13px auto 0;
+    }
+
+    /*----HOME----*/
+
+    .jl-display-text {
+        margin-top: 10%;
+    }
+
+    .jl-display-text-sobre {
+        margin-top: 5%;
+    }
+
+    #jl-home-presentation {
+        background-image: url('../images/perfilfoto.jpg');
+        background-repeat: no-repeat;
+        background-position: 60% bottom;
+        background-size: 55%;
+    }
+
+    .jl-sobre-presentation {
+        margin: 0 auto;
+        margin-top: 120px;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    .jl-menu {
+        display: table;
+        float: left;
+        height: 110px;
+        margin-left: 30px;
+    }
+
+    .jl-menu a {
+        font-family: 'Open Sans';
+        font-size: 20px;
+        color: #bcbcbc;
+        text-decoration: none;
+        text-transform: lowercase;
+        display: inline-block;
+        margin: 50px 20px 0 20px;
+        font-weight: 500;
+        position: relative;
+        text-transform: capitalize;
+    }
+
+    .jl-menu a:first-child {
+        margin-left: 0;
+    }
+
+    .jl-menu a:hover {
+        color: #2CCB69;
+    }
+
+    .jl-menu a:before {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #2CCB69;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.2s ease-out;
+        transform: scale(0, 1);
+        transform-origin: center left;
+    }
+
+    .jl-menu a:hover:before {
+        transform: scale(1, 1);
+    }
+
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1364px) {}
+
+@media screen and (min-width: 1600px) {}
+
+/* CLASSES UTILITARIAS */
+
+.jl-title {
+    font-family: 'abril fatface', serif;
+    font-weight: normal;
+}
+
+.jl-title-big {
+    font-size: 120px;
+}
+
+.jl-title-big-sobre {
+    font-size: 45px;
+    text-align: center;
+}
+
+.jl-text-green {
+    color: #2CCB69;
+}
+
+.jl-text-dark {
+    color: #4D4C4C;
+}
+
+.jl-text-light {
+    color: #BCBCBC;
+    font-size: 20px;
+}
+
+.jl-text-light-sobre {
+    color: #BCBCBC;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.jl-text-black {
+    color: #000;
+}
+
+.jl-bg-green {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light {
+    background-color: #BCBCBC;
+}
+
+.jl-bg-black {
+    background-color: transparent;
+}
+
+.jl-full-height {
+    height: auto;
+}
+
+.jl-first-section {
+    height: 100%;
+}
+
+/* CLASSES COMPORTAMENTO */
+
+.jl-is-open {
+    display: block;
+}
+
+.jl-change-icon {
+    background-position-y: -45px;
+}
